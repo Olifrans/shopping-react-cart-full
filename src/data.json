@@ -1,0 +1,52 @@
+{
+  "produtos": [
+    {
+      "_id": "img1",
+      "image": "/images/dress1.jpg",
+      "titulo": "Vestido com detalhe de babados",
+      "descricao": "Isto é para todas as últimas tendências, não importa quem você é, de onde você é e o que você está fazendo. Exclusiva para ASOS, nossa marca universal está aqui para você, e vem em todo o nosso ajuste gamas: ASOS Curve, Tall, Petite e Maternidade. Criado por nós, estilizado por você.",
+      "tamanhosDisponiveis": ["X", "L", "XL", "XXL"],
+      "preco": 29.9
+    },
+    {
+      "_id": "img2",
+      "image": "/images/dress2.jpg",
+      "titulo": "Vestido com frente franzida",
+      "descricao": "Isto é para todas as últimas tendências, não importa quem você é, de onde você é e o que você está fazendo. Exclusiva para ASOS, nossa marca universal está aqui para você, e vem em todo o nosso ajuste gamas: ASOS Curve, Tall, Petite e Maternidade. Criado por nós, estilizado por você.",
+      "tamanhosDisponiveis": ["X", "M", "L"],
+      "preco": 18.9
+    },
+    {
+      "_id": "img3",
+      "image": "/images/dress3.jpg",
+      "titulo": "Vestido com estampa floral rosa",
+      "descricao": "Isto é para todas as últimas tendências, não importa quem você é, de onde você é e o que você está fazendo. Exclusiva para ASOS, nossa marca universal está aqui para você, e vem em todo o nosso ajuste gamas: ASOS Curve, Tall, Petite e Maternidade. Criado por nós, estilizado por você.",
+      "tamanhosDisponiveis": ["X", "M", "L"],
+      "preco": 14.9
+    },
+    {
+      "_id": "img4",
+      "image": "/images/dress4.jpg",
+      "titulo": "Vestido cami maxi de bolinhas",
+      "descricao": "Isto é para todas as últimas tendências, não importa quem você é, de onde você é e o que você está fazendo. Exclusiva para ASOS, nossa marca universal está aqui para você, e vem em todo o nosso ajuste gamas: ASOS Curve, Tall, Petite e Maternidade. Criado por nós, estilizado por você.",
+      "tamanhosDisponiveis": ["XL"],
+      "preco": 25.9
+    },
+    {
+      "_id": "img5",
+      "image": "/images/dress5.jpg",
+      "titulo": "Vestido mini babado em bolinhas amarelas",
+      "descricao": "Isto é para todas as últimas tendências, não importa quem você é, de onde você é e o que você está fazendo. Exclusiva para ASOS, nossa marca universal está aqui para você, e vem em todo o nosso ajuste gamas: ASOS Curve, Tall, Petite e Maternidade. Criado por nós, estilizado por você.",
+      "tamanhosDisponiveis": ["X", "L", "XL"],
+      "preco": 10.9
+    },
+    {
+      "_id": "img6",
+      "image": "/images/dress6.jpg",
+      "titulo": "Vestido de chá midi em mancha azul e vermelha",
+      "descricao": "Isto é para todas as últimas tendências, não importa quem você é, de onde você é e o que você está fazendo. Exclusiva para ASOS, nossa marca universal está aqui para você, e vem em todo o nosso ajuste gamas: ASOS Curve, Tall, Petite e Maternidade. Criado por nós, estilizado por você.",
+      "tamanhosDisponiveis": ["XL", "XXL"],
+      "preco": 49.9
+    }
+  ]
+}

@@ -70,8 +70,8 @@ footer {
   flex: 1 20rem;
 }
 
-/* products */
-.products {
+/* produtos */
+.produtos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -85,7 +85,7 @@ footer {
   height: 47rem;
   padding: 1rem;
 }
-.product {
+.produt {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -191,7 +191,7 @@ input {
   padding: 1rem;
   border: 0.1rem #c0c0c0 solid;
 }
-/* Product Details */
+/* Produto Detalhes */
 .product-details {
   display: flex;
   flex-wrap: wrap;
@@ -215,7 +215,7 @@ input {
 }
 
 
-/* Order Details */
+/* Order Detalhes */
 
 .order-details {
   display: flex;
