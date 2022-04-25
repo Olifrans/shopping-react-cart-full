@@ -1,4 +1,5 @@
 import React from "react";
+import Carrinho from "./components/Carrinho";
 import Filter from "./components/Filter";
 import Produtos from "./components/Produtos";
 import data from "./data.json";
@@ -8,16 +9,37 @@ class App extends React.Component {
     super();
     this.state = {
       produtos: data.produtos,
+      carrinhoDeItens: [],
       size: "",
       sort: "",
     };
   }
 
+  removeDoCarrinho = (produto) => {
+    const carItens = this.state.carItens.slice();
+    this.setState({
+      carItens: carItens.filter((x) => x.id !== produto.id),
+    });
+  };
+
+  addToCarrinho = (produto) => {
+    const carrinhoDeItens = this.state.carrinhoDeItens.slice();
+    let alreadyInCarrinho = false;
+    carrinhoDeItens.forEach((item) => {
+      if (item.id === produto.id) {
+        item.count++;
+        alreadyInCarrinho = true;
+      }
+    });
+    if (!alreadyInCarrinho) {
+      carrinhoDeItens.push({ ...produto, count: 1 });
+    }
+    this.setState({ carrinhoDeItens });
+  };
+
   sortProdutos = (evento) => {
     const sort = evento.target.value;
-
     console.log(evento.target.value);
-
     this.setState((state) => ({
       sort: sort,
       produtos: this.state.produtos
@@ -67,12 +89,20 @@ class App extends React.Component {
                 count={this.state.produtos.length}
                 size={this.state.size}
                 sort={this.state.sort}
-                filterProdutos={this.state.filterProdutos}
-                sortProdutos={this.state.sortProdutos}
+                filterProdutos={this.filterProdutos}
+                sortProdutos={this.sortProdutos}
               />
-              <Produtos produtos={this.state.produtos} />
+              <Produtos
+                produtos={this.state.produtos}
+                addToCarrinho={this.addToCarrinho}
+              />
             </div>
-            <div className="sidebar">Itens do Carrinho</div>
+            <div className="sidebar">
+              <Carrinho
+                carrinhoDeItens={this.state.carrinhoDeItens}
+                removeDoCarrinho={this.removeDoCarrinho}
+              />
+            </div>
           </div>
         </main>
 
