@@ -80,32 +80,32 @@ footer {
   margin: 0;
   list-style-type: none;
 }
-.products li {
+.produtos li {
   flex: 0 1 29rem;
   height: 47rem;
   padding: 1rem;
 }
-.produt {
+.produto {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
-.product img {
+.produto img {
   max-width: 37rem;
   max-height: 37rem;
 }
-.product-price {
+.produto-price {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.product-price div,
-.product-price button {
+.produto-price div,
+.produto-price button {
   text-align: center;
   flex: 1;
 }
-.product-price div {
+.produto-price div {
   font-size: 2rem;
 }
 .button {

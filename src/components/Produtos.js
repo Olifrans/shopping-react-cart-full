@@ -1,15 +1,26 @@
 import React, { Component } from "react";
+import formatCurrency from "../util";
 
-export default class componentName extends Component {
+export default class Produtos extends Component {
   render() {
     return (
       <div>
         <ul className="produtos">
           {this.props.produtos.map((produto) => (
-            <li key={produto._id}>
-                <div className="produtos">
+            <li key={produto.id}>
 
-                </div>
+              <div className="produtos">
+                <a href={"#" + produto.id}>
+                  <img src={produto.image} alt={produto.titulo}></img>
+                  <p>{produto.titulo}</p>
+                </a>
+              </div>
+
+              <div className="produto-price">
+                <div>{formatCurrency(produto.preco)}</div>
+                <button className="button primary">Adcionar ao Carrinho</button>
+              </div>
+
             </li>
           ))}
         </ul>

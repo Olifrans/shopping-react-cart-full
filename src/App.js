@@ -1,4 +1,5 @@
 import React from "react";
+import Produtos from "./components/Produtos";
 import data from "./data.json";
 
 class App extends React.Component {
@@ -20,7 +21,9 @@ class App extends React.Component {
 
         <main>
           <div className="content">
-            <div className="main">Produtos</div>
+            <div className="main">
+              <Produtos produtos={this.state.produtos} />
+            </div>
             <div className="sidebar">Itens do Carrinho</div>
           </div>
         </main>
