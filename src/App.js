@@ -9,17 +9,29 @@ class App extends React.Component {
     super();
     this.state = {
       produtos: data.produtos,
-      carrinhoDeItens: [],
+      carrinhoDeItens: localStorage.getItem("carrinhoDeItens")
+        ? JSON.parse(localStorage.getItem("carrinhoDeItens"))
+        : [],
       size: "",
       sort: "",
     };
   }
 
+  createOrder = (order) => {
+    alert("Salvar pedido ordem da pagamento" + order.name);
+  };
+
   removeDoCarrinho = (produto) => {
-    const carItens = this.state.carItens.slice();
+    const carrinhoDeItens = this.state.carrinhoDeItens.slice();
     this.setState({
-      carItens: carItens.filter((x) => x.id !== produto.id),
+      carrinhoDeItens: carrinhoDeItens.filter((x) => x.id !== produto.id),
     });
+
+    //Mock DB
+    localStorage.setItem(
+      "carrinhoDeItens",
+      JSON.stringify(carrinhoDeItens.filter((x) => x.id !== produto.id))
+    );
   };
 
   addToCarrinho = (produto) => {
@@ -35,6 +47,9 @@ class App extends React.Component {
       carrinhoDeItens.push({ ...produto, count: 1 });
     }
     this.setState({ carrinhoDeItens });
+
+    //Mock DB
+    localStorage.setItem("carrinhoDeItens", JSON.stringify(carrinhoDeItens));
   };
 
   sortProdutos = (evento) => {
@@ -101,6 +116,7 @@ class App extends React.Component {
               <Carrinho
                 carrinhoDeItens={this.state.carrinhoDeItens}
                 removeDoCarrinho={this.removeDoCarrinho}
+                createOrder={this.createOrder}
               />
             </div>
           </div>
