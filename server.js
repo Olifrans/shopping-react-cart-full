@@ -1,8 +1,3 @@
-
-
-import { connect } from "mongoose";
-
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -12,21 +7,16 @@ const app = express();
 app.use(bodyParser.json());
 
 /*
-This is my .env, I'm guessing the problem might be here too, Kindly help:
-ATLAS_URI=mongodb+srv://userone:useronepassword1234@cluster0.swye5.mongodb.net/<dbname>?retryWrites=true&w=majority
 https://stackoverflow.com/questions/65680842/error-mongooseerror-operation-users-insertone-buffering-timed-out-after-1
-
 https://www.reddit.com/r/node/comments/obqp28/mongooseerror_operation_usersinsertone_buffering/
+
+ATLAS_URI=mongodb+srv://userone:useronepassword1234@cluster0.swye5.mongodb.net/<dbname>?retryWrites=true&w=majority
+mongoose.connect('mongodb://username:password@host:port/database?options...');
+mongoose.connect('mongodb://localhost/shoppindb');
+mongoose.connect('mongodb://localhost:27017/shoppindb');
 */
 
-//mongoose.connect('mongodb://username:password@host:port/database?options...');
-
-//mongoose.connect('mongodb://localhost/shoppindb');
-
-mongoose.connect('mongodb://localhost:27017/shoppindb');
-
-
-
+mongoose.connect("mongodb://127.0.0.1:27017/shoppindb");
 
 const Produto = mongoose.model(
   "produtos",
