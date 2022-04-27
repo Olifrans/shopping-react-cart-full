@@ -69,6 +69,22 @@ yarn add shortid
 
 
 
+## React Redux is the official React UI bindings layer for Redux. It lets your React components read data from a Redux store, and dispatch actions to the store to update state.**
+https://github.com/reduxjs/react-redux
+https://react-redux.js.org/
+yarn add react-redux
+
+
+## Redux Thunk 
+https://github.com/reduxjs/redux-thunk
+https://redux.js.org/usage/writing-logic-thunks
+yarn add redux-thunk
+
+
+
+yarn add react-redux redux-thunk
+
+
 
 
 

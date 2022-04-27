@@ -1,8 +1,10 @@
 import React from "react";
+import { Provider } from "react-redux";
 import Carrinho from "./components/Carrinho";
 import Filter from "./components/Filter";
 import Produtos from "./components/Produtos";
 import data from "./data.json";
+import store from "./store";
 
 class App extends React.Component {
   constructor() {
@@ -24,13 +26,13 @@ class App extends React.Component {
   removeDoCarrinho = (produto) => {
     const carrinhoDeItens = this.state.carrinhoDeItens.slice();
     this.setState({
-      carrinhoDeItens: carrinhoDeItens.filter((x) => x.id !== produto.id),
+      carrinhoDeItens: carrinhoDeItens.filter((x) => x._id !== produto._id),
     });
 
     //Mock DB
     localStorage.setItem(
       "carrinhoDeItens",
-      JSON.stringify(carrinhoDeItens.filter((x) => x.id !== produto.id))
+      JSON.stringify(carrinhoDeItens.filter((x) => x.id !== produto._id))
     );
   };
 
@@ -68,7 +70,7 @@ class App extends React.Component {
             ? a.preco < b.preco
               ? 1
               : -1
-            : a.id < b.id
+            : a._id < b._id
             ? 1
             : -1
         ),
@@ -92,38 +94,40 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="grid-container">
-        <header>
-          <a href="/">React Shopping</a>
-        </header>
+      <Provider store={store}>
 
-        <main>
-          <div className="content">
-            <div className="main">
-              <Filter
-                count={this.state.produtos.length}
-                size={this.state.size}
-                sort={this.state.sort}
-                filterProdutos={this.filterProdutos}
-                sortProdutos={this.sortProdutos}
-              />
-              <Produtos
-                produtos={this.state.produtos}
-                addToCarrinho={this.addToCarrinho}
-              />
-            </div>
-            <div className="sidebar">
-              <Carrinho
-                carrinhoDeItens={this.state.carrinhoDeItens}
-                removeDoCarrinho={this.removeDoCarrinho}
-                createOrder={this.createOrder}
-              />
-            </div>
-          </div>
-        </main>
+        <div className="grid-container">
+          <header>
+            <a href="/">React Shopping</a>
+          </header>
 
-        <footer>Todos direitos reservados</footer>
-      </div>
+          <main>
+            <div className="content">
+              <div className="main">
+                <Filter
+                  count={this.state.produtos.length}
+                  size={this.state.size}
+                  sort={this.state.sort}
+                  filterProdutos={this.filterProdutos}
+                  sortProdutos={this.sortProdutos}
+                />
+                <Produtos
+                  produtos={this.state.produtos}
+                  addToCarrinho={this.addToCarrinho}
+                />
+              </div>
+              <div className="sidebar">
+                <Carrinho
+                  carrinhoDeItens={this.state.carrinhoDeItens}
+                  removeDoCarrinho={this.removeDoCarrinho}
+                  createOrder={this.createOrder}
+                />
+              </div>
+            </div>
+          </main>
+          <footer>Todos direitos reservados 2022</footer>
+        </div>
+      </Provider>
     );
   }
 }
