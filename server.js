@@ -3,19 +3,35 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const shortid = require("shortid");
 
+// var data = require("./build/data.json");
 const app = express();
 app.use(bodyParser.json());
 
+// //Deploy
+// app.use("/", express.static(__dirname + "/build"));
+// app.get("/", (req, res) => res.sendFile(__dirname + "/build/index.html"));
+
 /*
+Problemas de conexão local no MongoDB:
 https://stackoverflow.com/questions/65680842/error-mongooseerror-operation-users-insertone-buffering-timed-out-after-1
 https://www.reddit.com/r/node/comments/obqp28/mongooseerror_operation_usersinsertone_buffering/
-
 ATLAS_URI=mongodb+srv://userone:useronepassword1234@cluster0.swye5.mongodb.net/<dbname>?retryWrites=true&w=majority
 mongoose.connect('mongodb://username:password@host:port/database?options...');
 mongoose.connect('mongodb://localhost/shoppindb');
 mongoose.connect('mongodb://localhost:27017/shoppindb');
 */
 
+// // //Conexão local MongoDB
+// mongoose.connect(
+//   process.env.MONGODB - URL || "mongodb://127.0.0.1:27017/shoppindb",
+//   {
+//     useCreateIndex: true,
+//     useNewUrlParser: true,
+//     useUnifiedTopology: true,
+//   }
+// );
+
+//Conexão local MongoDB
 mongoose.connect("mongodb://127.0.0.1:27017/shoppindb");
 
 const Produto = mongoose.model(

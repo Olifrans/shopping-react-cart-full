@@ -1,70 +1,68 @@
 {
   "produtos": [
     {
-      "id": "im1",
+      "_id": "im1",
       "image": "/images/im1.png",
-      "titulo": "Vestido com detalhe de babados",
-      "descricao": "Isto é para todas as últimas tendências, não importa quem você é, de onde você é e o que você está fazendo. Exclusiva para ASOS, nossa marca universal está aqui para você, e vem em todo o nosso ajuste gamas: ASOS Curve, Tall, Petite e Maternidade. Criado por nós, estilizado por você.",
+      "titulo": "Livro de React Java Script",
+      "descricao": "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.",
       "tamanhosDisponiveis": ["X", "G", "GG", "XGG"],
-      "preco": 29.90
+      "preco": 299.9
     },
     {
-      "id": "im2",
+      "_id": "im2",
       "image": "/images/im2.png",
-      "titulo": "Vestido com frente franzida",
-      "descricao": "Isto é para todas as últimas tendências, não importa quem você é, de onde você é e o que você está fazendo. Exclusiva para ASOS, nossa marca universal está aqui para você, e vem em todo o nosso ajuste gamas: ASOS Curve, Tall, Petite e Maternidade. Criado por nós, estilizado por você.",
+      "titulo": "Java orientada a objetos",
+      "descricao": "Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems..",
       "tamanhosDisponiveis": ["X", "M", "G"],
-      "preco": 18.99
+      "preco": 188.99
     },
     {
-      "id": "im3",
+      "_id": "im3",
       "image": "/images/im3.png",
-      "titulo": "Vestido com estampa floral rosa",
-      "descricao": "Isto é para todas as últimas tendências, não importa quem você é, de onde você é e o que você está fazendo. Exclusiva para ASOS, nossa marca universal está aqui para você, e vem em todo o nosso ajuste gamas: ASOS Curve, Tall, Petite e Maternidade. Criado por nós, estilizado por você.",
+      "titulo": "Dot Net Core",
+      "descricao": ".NET é um framework livre e de código aberto para os sistemas operacionais Windows, Linux e macOS. É um sucessor de código aberto do .NET Framework.",
       "tamanhosDisponiveis": ["X", "M", "G"],
-      "preco": 14.9
+      "preco": 140.9
     },
     {
-      "id": "im4",
+      "_id": "im4",
       "image": "/images/im4.png",
-      "titulo": "Vestido cami maxi de bolinhas",
-      "descricao": "Isto é para todas as últimas tendências, não importa quem você é, de onde você é e o que você está fazendo. Exclusiva para ASOS, nossa marca universal está aqui para você, e vem em todo o nosso ajuste gamas: ASOS Curve, Tall, Petite e Maternidade. Criado por nós, estilizado por você.",
+      "titulo": "Node.js",
+      "descricao": "Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.",
       "tamanhosDisponiveis": ["GG"],
-      "preco": 25.94
+      "preco": 255.94
     },
     {
-      "id": "im5",
+      "_id": "im5",
       "image": "/images/im5.png",
-      "titulo": "Vestido mini babado em bolinhas amarelas",
-      "descricao": "Isto é para todas as últimas tendências, não importa quem você é, de onde você é e o que você está fazendo. Exclusiva para ASOS, nossa marca universal está aqui para você, e vem em todo o nosso ajuste gamas: ASOS Curve, Tall, Petite e Maternidade. Criado por nós, estilizado por você.",
+      "titulo": "Next.js",
+      "descricao": "Next.js é uma estrutura da web de desenvolvimento front-end React de código aberto criada por Vercel que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React.",
       "tamanhosDisponiveis": ["X", "G", "GG"],
-      "preco": 10.95
+      "preco": 190.95
     },
     {
-      "id": "im6",
+      "_id": "im6",
       "image": "/images/im6.png",
-      "titulo": "Vestido de chá midi em mancha azul e vermelha",
-      "descricao": "Isto é para todas as últimas tendências, não importa quem você é, de onde você é e o que você está fazendo. Exclusiva para ASOS, nossa marca universal está aqui para você, e vem em todo o nosso ajuste gamas: ASOS Curve, Tall, Petite e Maternidade. Criado por nós, estilizado por você.",
+      "titulo": "Linux",
+      "descricao": "Linux é um termo popularmente empregado para se referir a sistemas operativos ou sistemas operacionais que utilizam o Kernel Linux. O núcleo foi desenvolvido pelo programador finlandês Linus Torvalds, inspirado no sistema Minix.",
       "tamanhosDisponiveis": ["GG", "XGG"],
-      "preco": 49.98
+      "preco": 489.98
     },
     {
-      "id": "im7",
+      "_id": "im7",
       "image": "/images/im7.png",
-      "titulo": "Vestido de chá midi em mancha azul e vermelha",
-      "descricao": "Isto é para todas as últimas tendências, não importa quem você é, de onde você é e o que você está fazendo. Exclusiva para ASOS, nossa marca universal está aqui para você, e vem em todo o nosso ajuste gamas: ASOS Curve, Tall, Petite e Maternidade. Criado por nós, estilizado por você.",
+      "titulo": "Cybersecurity",
+      "descricao": "Segurança de computadores ou cibersegurança é a proteção de sistemas de computador contra roubo ou danos ao hardware, software ou dados eletrônicos, bem como a interrupção ou desorientação dos serviços que fornecem.",
       "tamanhosDisponiveis": ["GG", "XGG"],
-      "preco": 49.98
+      "preco": 649.98
     },
     {
-      "id": "im8",
+      "_id": "im8",
       "image": "/images/im8.png",
-      "titulo": "Vestido de chá midi em mancha azul e vermelha",
-      "descricao": "Isto é para todas as últimas tendências, não importa quem você é, de onde você é e o que você está fazendo. Exclusiva para ASOS, nossa marca universal está aqui para você, e vem em todo o nosso ajuste gamas: ASOS Curve, Tall, Petite e Maternidade. Criado por nós, estilizado por você.",
+      "titulo": "Golang",
+      "descricao": "Go é uma linguagem de programação criada pela Google e lançada em código livre em novembro de 2009. É uma linguagem compilada e focada em produtividade e programação concorrente, baseada em trabalhos feitos no sistema operacional chamado Inferno.",
       "tamanhosDisponiveis": ["GG", "XGG"],
-      "preco": 49.98
+      "preco": 419.98
     }
-
-
   ]
 }
