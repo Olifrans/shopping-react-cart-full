@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import formatCurrency from "../util";
 import Fade from "react-reveal/Fade";
 
-export default class Carrinho extends Component {
+import { connect } from "react-redux";
+import { removeFromCarrinho } from "../actions/carrinhoActions";
+
+class Carrinho extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -146,3 +149,12 @@ export default class Carrinho extends Component {
     );
   }
 }
+
+export default connect(
+  (state) => ({
+    carrinhoDeItens: state.carrinho.carrinhoDeItens,
+  }),
+  {
+    removeFromCarrinho,
+  }
+)(Carrinho);

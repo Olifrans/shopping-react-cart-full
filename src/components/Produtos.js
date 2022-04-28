@@ -5,6 +5,7 @@ import Modal from "react-modal";
 import Zoom from "react-reveal/Zoom";
 import { connect } from "react-redux";
 import { fetchProdutos } from "../actions/produtoActions";
+import { addToCarrinho } from "../actions/carrinhoActions";
 
 class Produtos extends Component {
   constructor(props) {
@@ -87,6 +88,7 @@ class Produtos extends Component {
                   </p>
                   <div className="produto-price">
                     <div>{formatCurrency(produto.preco)}</div>
+
                     <button
                       className="button primary"
                       onClick={() => {
@@ -111,5 +113,6 @@ export default connect(
   (state) => ({ produtos: state.produtos.filteredItens }),
   {
     fetchProdutos,
+    addToCarrinho,
   }
 )(Produtos);
