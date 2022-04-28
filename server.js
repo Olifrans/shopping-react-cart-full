@@ -10,8 +10,8 @@ app.use(bodyParser.json());
 // //Deploy
 // app.use("/", express.static(__dirname + "/build"));
 // app.get("/", (req, res) => res.sendFile(__dirname + "/build/index.html"));
-
 /*
+
 Problemas de conexão local no MongoDB:
 https://stackoverflow.com/questions/65680842/error-mongooseerror-operation-users-insertone-buffering-timed-out-after-1
 https://www.reddit.com/r/node/comments/obqp28/mongooseerror_operation_usersinsertone_buffering/
@@ -21,7 +21,7 @@ mongoose.connect('mongodb://localhost/shoppindb');
 mongoose.connect('mongodb://localhost:27017/shoppindb');
 */
 
-// // //Conexão local MongoDB
+// // //Erro conexão local MongoDB
 // mongoose.connect(
 //   process.env.MONGODB - URL || "mongodb://127.0.0.1:27017/shoppindb",
 //   {
@@ -31,7 +31,7 @@ mongoose.connect('mongodb://localhost:27017/shoppindb');
 //   }
 // );
 
-//Conexão local MongoDB
+//Conexão local ok
 mongoose.connect("mongodb://127.0.0.1:27017/shoppindb");
 
 //Model de produtos
@@ -65,9 +65,6 @@ app.delete("/api/produtos/:id", async (req, res) => {
   const deleteProduto = await Produto.findByIdAndDelete(req.params.id);
   res.send(deleteProduto);
 });
-
-
-
 
 //Model da Order-Pagamento
 const Order = mongoose.model(
@@ -111,9 +108,6 @@ app.post("/api/orders", async (req, res) => {
   const order = await Order(req.body).save();
   res.send(order);
 });
-
-
-
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log("Servidor ativo em http://localhost:5000"));

@@ -3,64 +3,64 @@
     {
       "_id": "im1",
       "image": "/images/im1.png",
-      "titulo": "Livro de React Java Script",
-      "descricao": "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.",
+      "titulo": "Camisa de Time de Futebol",
+      "descricao": "Camisa do seu time do coraçõa, cista a camisa e grite Gol!!!!!! muito alto.",
       "tamanhosDisponiveis": ["X", "G", "GG", "XGG"],
       "preco": 299.9
     },
     {
       "_id": "im2",
       "image": "/images/im2.png",
-      "titulo": "Java orientada a objetos",
-      "descricao": "Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems..",
+      "titulo": "Camisa de Time de Futebol",
+      "descricao": "Camisa do seu time do coraçõa, cista a camisa e grite Gol!!!!!! muito alto.",
       "tamanhosDisponiveis": ["X", "M", "G"],
       "preco": 188.99
     },
     {
       "_id": "im3",
       "image": "/images/im3.png",
-      "titulo": "Dot Net Core",
-      "descricao": ".NET é um framework livre e de código aberto para os sistemas operacionais Windows, Linux e macOS. É um sucessor de código aberto do .NET Framework.",
+      "titulo": "Camisa de Time de Futebol",
+      "descricao": "Camisa do seu time do coraçõa, cista a camisa e grite Gol!!!!!! muito alto.",
       "tamanhosDisponiveis": ["X", "M", "G"],
       "preco": 140.9
     },
     {
       "_id": "im4",
       "image": "/images/im4.png",
-      "titulo": "Node.js",
-      "descricao": "Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.",
+      "titulo": "Camisa de Time de Futebol",
+      "descricao": "Camisa do seu time do coraçõa, cista a camisa e grite Gol!!!!!! muito alto.",
       "tamanhosDisponiveis": ["GG"],
       "preco": 255.94
     },
     {
       "_id": "im5",
       "image": "/images/im5.png",
-      "titulo": "Next.js",
-      "descricao": "Next.js é uma estrutura da web de desenvolvimento front-end React de código aberto criada por Vercel que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React.",
+      "titulo": "Camisa de Time de Futebol",
+      "descricao": "Camisa do seu time do coraçõa, cista a camisa e grite Gol!!!!!! muito alto.",
       "tamanhosDisponiveis": ["X", "G", "GG"],
       "preco": 190.95
     },
     {
       "_id": "im6",
       "image": "/images/im6.png",
-      "titulo": "Linux",
-      "descricao": "Linux é um termo popularmente empregado para se referir a sistemas operativos ou sistemas operacionais que utilizam o Kernel Linux. O núcleo foi desenvolvido pelo programador finlandês Linus Torvalds, inspirado no sistema Minix.",
+      "titulo": "Camisa de Time de Futebol",
+      "descricao": "Camisa do seu time do coraçõa, cista a camisa e grite Gol!!!!!! muito alto.",
       "tamanhosDisponiveis": ["GG", "XGG"],
       "preco": 489.98
     },
     {
       "_id": "im7",
       "image": "/images/im7.png",
-      "titulo": "Cybersecurity",
-      "descricao": "Segurança de computadores ou cibersegurança é a proteção de sistemas de computador contra roubo ou danos ao hardware, software ou dados eletrônicos, bem como a interrupção ou desorientação dos serviços que fornecem.",
+      "titulo": "Camisa de Time de Futebol",
+      "descricao": "Camisa do seu time do coraçõa, cista a camisa e grite Gol!!!!!! muito alto.",
       "tamanhosDisponiveis": ["GG", "XGG"],
       "preco": 649.98
     },
     {
       "_id": "im8",
       "image": "/images/im8.png",
-      "titulo": "Golang",
-      "descricao": "Go é uma linguagem de programação criada pela Google e lançada em código livre em novembro de 2009. É uma linguagem compilada e focada em produtividade e programação concorrente, baseada em trabalhos feitos no sistema operacional chamado Inferno.",
+      "titulo": "Camisa de Time de Futebol",
+      "descricao": "Camisa do seu time do coraçõa, cista a camisa e grite Gol!!!!!! muito alto.",
       "tamanhosDisponiveis": ["GG", "XGG"],
       "preco": 419.98
     }
