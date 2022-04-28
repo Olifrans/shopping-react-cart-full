@@ -34,6 +34,7 @@ mongoose.connect('mongodb://localhost:27017/shoppindb');
 //Conexão local MongoDB
 mongoose.connect("mongodb://127.0.0.1:27017/shoppindb");
 
+//Model de produtos
 const Produto = mongoose.model(
   "produtos",
   new mongoose.Schema({
@@ -64,6 +65,55 @@ app.delete("/api/produtos/:id", async (req, res) => {
   const deleteProduto = await Produto.findByIdAndDelete(req.params.id);
   res.send(deleteProduto);
 });
+
+
+
+
+//Model da Order-Pagamento
+const Order = mongoose.model(
+  "order",
+  new mongoose.Schema(
+    {
+      _id: {
+        type: String,
+        default: shortid.generate,
+      },
+      email: String,
+      name: String,
+      address: String,
+      total: Number,
+      carrinhoDeItens: [
+        {
+          _id: String,
+          titulo: String,
+          preco: Number,
+          count: Number,
+        },
+      ],
+    },
+    {
+      timestamps: true,
+    }
+  )
+);
+
+//Post Order
+app.post("/api/orders", async (req, res) => {
+  if (
+    !req.body.name ||
+    !req.body.email ||
+    !req.body.address ||
+    !req.body.total ||
+    !req.body.carrinhoDeItens
+  ) {
+    return res.send({ message: "Os dados são obrigatórios." });
+  }
+  const order = await Order(req.body).save();
+  res.send(order);
+});
+
+
+
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log("Servidor ativo em http://localhost:5000"));

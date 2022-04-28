@@ -11,7 +11,7 @@ class App extends React.Component {
       <Provider store={store}>
         <div className="grid-container">
           <header>
-            <a href="/">React Shopping</a>
+            <a href="/">Olifrans Shopping-React</a>
           </header>
 
           <main>
@@ -25,7 +25,7 @@ class App extends React.Component {
               </div>
             </div>
           </main>
-          
+
           <footer>Todos direitos reservados 2022</footer>
         </div>
       </Provider>
